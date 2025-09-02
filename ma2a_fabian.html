@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Torneo de Videojuegos</title>
+</head>
+<body>
+  <h1>Registro para un Torneo de Videojuegos</h1>
+  <form action="#" method="post">
+    <table border="1" cellpadding="5">
+      <tr>
+        <td><label for="nombre">Nombre:</label></td>
+        <td><input type="text" id="nombre" name="nombre" required minlength="3" maxlength="15"></td>
+      </tr>
+      <tr>
+        <td><label for="correo">Correo:</label></td>
+        <td><input type="email" id="correo" name="correo" required></td>
+      </tr>
+      <tr>
+        <td><label for="edad">Edad:</label></td>
+        <td><input type="number" id="edad" name="edad" required min="12" max="40"></td>
+      </tr>
+      <tr>
+        <td><label for="nick">Nickname:</label></td>
+        <td><input type="text" id="nick" name="nick" required pattern="^[A-Za-z0-9]+$" title="Solo letras y números"></td>
+      </tr>
+      <tr>
+        <td>Categoria:</td>
+        <td>
+          <input type="radio" id="principiante" name="categoria" value="Principiante" required>
+          <label for="principiante">Noob</label>
+          <input type="radio" id="intermedio" name="categoria" value="Intermedio">
+          <label for="intermedio">Intermedio</label>
+          <input type="radio" id="experto" name="categoria" value="Experto">
+          <label for="experto">Master</label>
+        </td>
+      </tr>
+      <tr>
+        <td>Juegos favoritos:</td>
+        <td>
+          <input type="checkbox" id="fifa" name="favoritos" value="gd">
+          <label for="gd">Geometry dash</label>
+          <input type="checkbox" id="lol" name="favoritos" value="LoL">
+          <label for="lol">LoL</label>
+          <input type="checkbox" id="minecraft" name="favoritos" value="Minecraft">
+          <label for="minecraft">Minecraft</label>
+        </td>
+      </tr>
+      <tr>
+        <td><label for="fecha">Fecha:</label></td>
+        <td><input type="date" id="fecha" name="fecha" required min="2025-01-01" max="2025-12-31"></td>
+      </tr>
+    </table>
+    <br>
+    <input type="submit" value="Enviar">
+    <input type="reset" value="Restablecer">
+  </form>
+</body>
+</html>
